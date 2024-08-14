@@ -1,6 +1,6 @@
 {
 	"name": "mariadb-actions",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "MariaDB Github Action",
 	"homepage": "https://github.com/YakkaDev/mariadb-actions#readme",
 	"author": "Illia Korovin <admin@hostlike.pro> (https://github.com/YakkaDev/)",
