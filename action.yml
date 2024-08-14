@@ -1,0 +1,60 @@
+name: 'Setup MariaDB'
+description: 'Setup a MariaDB database'
+author: 'YakkaDev'
+
+branding:
+  icon: 'mariadb'
+  color: 'white'
+
+
+inputs:
+
+  host-port:
+    description: 'Incoming port'
+    required: false
+    default: 3306
+    
+  container-port:
+    description: 'Сontainer port'
+    required: false
+    default: 3306
+    
+  character:
+    description: 'The character set of MariaDB server'
+    required: false
+    default: 'utf8mb4'
+    
+  collation:
+    description: 'The character collation of MariaDB server'
+    required: false
+    default: 'utf8mb4_general_ci'
+    
+  version:
+    description: 'Version of MariaDB server'
+    required: false
+    default: 'latest'
+    
+  root-pass:
+    description: 'Root user password'
+    required: false
+    default: ''
+    
+  database:
+    description: 'MariaDB default database'
+    required: false
+    default: ''
+    
+  user:
+    description: 'User for created database'
+    required: false
+    default: ''
+    
+  password:
+    description: 'MariaDB user password'
+    required: false
+    default: ''
+
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

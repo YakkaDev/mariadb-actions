@@ -1,0 +1,19 @@
+name: Some tests
+
+on:
+  workflow_dispatch: ~
+  
+jobs:
+  tests:
+    name: Run some tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create MariaDB container
+        uses: YakkaDev/mariadb-action@latest
+        with:
+          version: '10.6.15'
+          database: 'TEST'
+          root-pass: '123123'
+          user: 'username'
+          password: 'userpass'
+          character: 'utf8mb4'
