@@ -14,7 +14,7 @@ inputs:
     required: false
     default: 3306
     
-  container port:
+  local port:
     description: 'Сontainer port'
     required: false
     default: 3306
@@ -34,7 +34,7 @@ inputs:
     required: false
     default: 'latest'
     
-  root password:
+  root pass:
     description: 'Root user password'
     required: false
     default: ''

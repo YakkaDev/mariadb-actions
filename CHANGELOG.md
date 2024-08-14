@@ -1,5 +1,5 @@
-## v.1.0.1
+## v.1.1.0
 ### **[General]**
-- Some fixes.
+- Some tests have been added.
 
 [Known Issues](https://github.com/YakkaDev/mariadb-actions/issues)

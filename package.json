@@ -1,14 +1,16 @@
 {
 	"name": "mariadb-actions",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"description": "MariaDB Github Action",
 	"homepage": "https://github.com/YakkaDev/mariadb-actions#readme",
 	"author": "Illia Korovin <admin@hostlike.pro> (https://github.com/YakkaDev/)",
 	"license": "SEE LICENSE IN LICENSE.md",
 	"type": "commonjs",
-	"main": "dev/index.js",
-	"scripts": {},
-	"exports": {},
+	"main": "index.js",
+	"scripts": {
+		"test": "jest --forceExit",
+		"test:coverage": "jest --forceExit --coverage"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/YakkaDev/mariadb-actions.git",
@@ -18,9 +20,16 @@
 		"url": "https://github.com/YakkaDev/mariadb-actions/issues",
 		"email": "admin@hostlike.pro"
 	},
-	"engines": {},
-	"dependencies": {},
-	"devDependencies": {},
+	"engines": {
+		"node": "19.7.0",
+		"npm": "9.5.0"
+	},
+	"dependencies": {
+		"mysql2": "3.11.0"
+	},
+	"devDependencies": {
+		"jest": "29.7.0"
+	},
 	"keywords": [
 		"MariaDB",
 		"MySQL",
