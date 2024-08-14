@@ -3,7 +3,7 @@ description: 'Setup a MariaDB database'
 author: 'YakkaDev'
 
 branding:
-  icon: 'mariadb'
+  icon: 'database'
   color: 'white'
 
 
