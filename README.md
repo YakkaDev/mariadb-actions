@@ -25,7 +25,7 @@ Below you will find some of the possible uses of this application.
 This preset will create the `TEST` database on the MariaDB engine version `10.6.15` with the root password `123123`.
 ```yml
 steps:
-- uses: YakkaDev/mariadb-action@latest
+- uses: YakkaDev/mariadb-actions@latest
   with:
     version: '10.6.15'
     database: 'TEST'
@@ -36,7 +36,7 @@ steps:
 This preset will create the `TEST` database with user `username` and password `userpass` on the MariaDB engine version `10.6.15` and characters set `utf8mb4` with the `random` root password.
 ```yml
 steps:
-- uses: YakkaDev/mariadb-action@latest
+- uses: YakkaDev/mariadb-actions@latest
   with:
     version: '10.6.15'
     character: 'utf8mb4'

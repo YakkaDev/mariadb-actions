@@ -1,8 +1,8 @@
 {
-	"name": "mariadb-action",
+	"name": "mariadb-actions",
 	"version": "1.0.0",
 	"description": "MariaDB Github Action",
-	"homepage": "https://github.com/YakkaDev/mariadb-action#readme",
+	"homepage": "https://github.com/YakkaDev/mariadb-actions#readme",
 	"author": "Illia Korovin <admin@hostlike.pro> (https://github.com/YakkaDev/)",
 	"license": "SEE LICENSE IN LICENSE.md",
 	"type": "commonjs",
@@ -11,11 +11,11 @@
 	"exports": {},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/YakkaDev/mariadb-action.git",
+		"url": "git+https://github.com/YakkaDev/mariadb-actions.git",
 		"directory": "."
 	},
 	"bugs": {
-		"url": "https://github.com/YakkaDev/mariadb-action/issues",
+		"url": "https://github.com/YakkaDev/mariadb-actions/issues",
 		"email": "admin@hostlike.pro"
 	},
 	"engines": {},

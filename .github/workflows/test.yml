@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create MariaDB container
-        uses: YakkaDev/mariadb-action@latest
+        uses: YakkaDev/mariadb-actions@latest
         with:
           version: '10.6.15'
           database: 'TEST'
