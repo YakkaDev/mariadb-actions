@@ -31,8 +31,6 @@ jobs:
           echo "commits_to_main=$(format_number $(git rev-list --count main))" >> $GITHUB_OUTPUT
           git gc
           echo "size=$(format_size $(($(git count-objects -v | grep 'size-pack: ' | sed 's/size-pack: //g' | tr -d '\n') * 1024)))" >> $GITHUB_OUTPUT
-          echo "NODE_VERSION=$(cat package.json | grep \"node\" | cut -d'"' -f 4)" >> $GITHUB_OUTPUT
-          echo "NPM_VERSION=$(cat package.json | grep \"npm\" | cut -d'"' -f 4)" >> $GITHUB_OUTPUT
         shell: bash
 
       - name: Create git-size badge
@@ -88,26 +86,4 @@ jobs:
           label: commits to main
           message: ${{ steps.git_info.outputs.commits_to_main }}
           namedLogo: git
-          color: f1502f
-
-      - name: Create node-version badge
-        uses: schneegans/dynamic-badges-action@v1.7.0
-        with:
-          auth: ${{ env.GIST_TOKEN }}
-          gistID: ${{ env.GIST_ID }}
-          filename: node-version.json
-          label: Node
-          message: ${{ steps.git_info.outputs.NODE_VERSION }}
-          namedLogo: node.js
-          color: f1502f
-
-      - name: Create npm-version badge
-        uses: schneegans/dynamic-badges-action@v1.7.0
-        with:
-          auth: ${{ env.GIST_TOKEN }}
-          gistID: ${{ env.GIST_ID }}
-          filename: npm-version.json
-          label: NPM
-          message: ${{ steps.git_info.outputs.NPM_VERSION }}
-          namedLogo: npm
           color: f1502f
