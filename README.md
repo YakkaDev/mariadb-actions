@@ -1,7 +1,7 @@
 # MariaDB GitHub Action
+![Last Commit](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/YakkaDev/cbc0fc3d1258e0bc92c749fb5fbc0860/raw/git-last-commit-date.json)
 ![Release Version](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/YakkaDev/cbc0fc3d1258e0bc92c749fb5fbc0860/raw/git-latest-release.json)
 ![File Count](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/YakkaDev/cbc0fc3d1258e0bc92c749fb5fbc0860/raw/git-file-count.json)
-![Last Commit](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/YakkaDev/cbc0fc3d1258e0bc92c749fb5fbc0860/raw/git-last-commit-date.json)
 
 - [Introduction](#introduction)
 - [Usage](#usage)
