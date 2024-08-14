@@ -1,6 +1,5 @@
-## v.1.0.0
+## v.1.0.1
 ### **[General]**
-- The application has been released.
-- Basic github infrastructure has been added.
+- Some fixes.
 
 [Known Issues](https://github.com/YakkaDev/mariadb-actions/issues)

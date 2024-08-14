@@ -9,12 +9,12 @@ branding:
 
 inputs:
 
-  host-port:
+  host port:
     description: 'Incoming port'
     required: false
     default: 3306
     
-  container-port:
+  container port:
     description: 'Сontainer port'
     required: false
     default: 3306
@@ -34,7 +34,7 @@ inputs:
     required: false
     default: 'latest'
     
-  root-pass:
+  root password:
     description: 'Root user password'
     required: false
     default: ''

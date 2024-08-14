@@ -2,10 +2,10 @@
 
 command="docker run"
 
-if [ -n "$INPUT_ROOT-PASS" ]; then
+if [ -n "$INPUT_ROOT_PASSWORD" ]; then
   echo "Root password not empty, use root superuser"
 
-  command="$command -e MARIADB_ROOT_PASSWORD=$INPUT_ROOT-PASS"
+  command="$command -e MARIADB_ROOT_PASSWORD=$INPUT_ROOT_PASSWORD"
   
 elif [ -n "$INPUT_USER" ]; then
   if [ -z "$INPUT_PASSWORD" ]; then
@@ -28,7 +28,7 @@ if [ -n "$INPUT_DATABASE" ]; then
   command="$command -e MARIADB_DATABASE=$INPUT_DATABASE"
 fi
 
-command="$command -d --name mariadb -p $INPUT_HOST-PORT:$INPUT_CONTAINER-PORT mariadb:$INPUT_VERSION --port=$INPUT_CONTAINER_PORT"
+command="$command -d --name mariadb -p $INPUT_HOST_PORT:$INPUT_CONTAINER_PORT mariadb:$INPUT_VERSION --port=$INPUT_CONTAINER_PORT"
 command="$command --character-set-server=$INPUT_CHARACTER --collation-server=$INPUT_COLLATION"
 
 sh -c "$command"
