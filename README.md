@@ -67,3 +67,6 @@ This project is released under the [MIT License](https://github.com/YakkaDev/mar
 The application uses a Docker container based on [MariaDB](https://mariadb.org/) images.
 
 ---
+
+
+<!-- Security scan triggered at 2025-09-02 03:19:04 -->
